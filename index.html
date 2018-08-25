@@ -7,1015 +7,1072 @@
 <!--<![endif]-->
 
 <head>
-  <meta charset="utf-8">
-  <title>Islamic Cultural Center, CET</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  <!--
+    <meta charset="utf-8">
+    <title>Islamic Cultural Center, CET</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+    <!--
 ICC website
 -->
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <style>
-    @media screen {
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        @media screen {}
+        
+        @media print {}
+    </style>
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
-    }
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/templatemo_misc.css">
+    <link rel="stylesheet" href="css/templatemo_style.css">
 
-    @media print {
-
-    }
-  </style>
-  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/font-awesome.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/templatemo_misc.css">
-  <link rel="stylesheet" href="css/templatemo_style.css">
-
-  <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+    <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 </head>
 
 <body bgcolor="#EC523F">
-  <!--[if lt IE 7]>
+    <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
-  <div class="site-main" id="sTop">
-    <div class="site-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <ul class="social-icons">
-              <li><a href="https://www.facebook.com/groups/122619931145607" class="fa fa-facebook"></a></li>
-              <li><a href="https://twitter.com/icccetvm" class="fa fa-twitter"></a></li>
+    <div class="site-main" id="sTop">
+        <div class="site-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <ul class="social-icons">
+                            <li>
+                                <a href="https://www.facebook.com/groups/122619931145607" class="fa fa-facebook"></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/icccetvm" class="fa fa-twitter"></a>
+                            </li>
 
 
-            </ul>
-          </div>
-          <!-- /.col-md-12 -->
+                        </ul>
+                    </div>
+                    <!-- /.col-md-12 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+            <div class="main-header">
+                <div class="container">
+                    <div id="menu-wrapper">
+                        <div class="row">
+                            <div class="logo-wrapper visible-md visible-lg col-md-4 col-xs-8">
+                                <h2> <a href="#">ISLAMIC CULTURAL CENTER</a></h2>
+                            </div>
+                            <!-- /.logo-wrapper -->
+                            <div class="logo-wrapper visible-sm visible-xs col-sm-2 col-xs-8">
+                                <h2> <a href="#">ICC</a></h2>
+                            </div>
+                            <!-- /.logo-wrapper -->
+                            <div class="col-md-8 col-sm-10 col-xs-4 main-menu text-right">
+                                <ul class="menu-first hidden-sm hidden-xs">
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li><a href="#services">eVENTS</a></li>
+                                    <li><a href="#portfolio">Portfolio</a></li>
+                                    <li><a href="#our-team">COMMITTEE</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                                <a href="#" class="toggle-menu visible-sm visible-xs"><i class="fa fa-bars"></i></a>
+                            </div>
+                            <!-- /.main-menu -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /#menu-wrapper -->
+                    <div class="menu-responsive hidden-md hidden-lg">
+                        <ul>
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#services">Events</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#our-team">Committee</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.menu-responsive -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.main-header -->
         </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container -->
-      <div class="main-header">
+        <!-- /.site-header -->
+        <div class="site-slider">
+            <div class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <div class="overlay"></div>
+                            <img src="images/slide1.jpg" alt="">
+                            <div class="slider-caption visible-md visible-lg">
+                                <h2>Inception</h2>
+                                <p>The Islamic Cultural Center (ICC) was founded in 1989 by a group of well guided muslims of College of Engineering, Trivandrum. It has now evolved into an organisation which caters the needs of muslims in the college. ICC
+                                    had its humble beginnings in a rented apartment and now it has flourished into a well structured organisation occupying a three storey building.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="overlay"></div>
+                            <img src="images/slide2.jpg" alt="">
+                            <div class="slider-caption visible-md visible-lg">
+                                <h2>Accentuate</h2>
+                                <p>Since its establishment, ICC has been a platform for Muslim students to interact and share their views on various topics. It is a non aligned institution which has no affiliation with any Islamic or political organisation.
+                                    ICC plans to share and propagate the teachings of the Qur'an and Prophet Muhammad (PBUH) to the student body and integrate them into a single mould.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="overlay"></div>
+                            <img src="images/slide3.jpg" alt="">
+                            <div class="slider-caption visible-md visible-lg">
+                                <h2>Features</h2>
+                                <p>ICC conducts regular Qur'an classes, professional meets, Hadith class and talks. Its own independent non-profit mess caters for the needs of hundreds of students. The ICC library equipped with several publications from
+                                    around the world covers world famous debates, symposiums and programs.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.flexslider -->
+            </div>
+            <!-- /.slider -->
+        </div>
+        <!-- /.site-slider -->
+    </div>
+    <!-- /.site-main -->
+
+
+    <div class="content-section" id="services">
         <div class="container">
-          <div id="menu-wrapper">
             <div class="row">
-              <div class="logo-wrapper visible-md visible-lg col-md-4 col-xs-8">
-                <h2> <a href="#">ISLAMIC CULTURAL CENTER</a></h2>
-              </div>
-              <!-- /.logo-wrapper -->
-              <div class="logo-wrapper visible-sm visible-xs col-sm-2 col-xs-8">
-                <h2> <a href="#">ICC</a></h2>
-              </div>
-              <!-- /.logo-wrapper -->
-              <div class="col-md-8 col-sm-10 col-xs-4 main-menu text-right">
-                <ul class="menu-first hidden-sm hidden-xs">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#services">eVENTS</a></li>
-                  <li><a href="#portfolio">Portfolio</a></li>
-                  <li><a href="#our-team">COMMITTEE</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-                <a href="#" class="toggle-menu visible-sm visible-xs"><i class="fa fa-bars"></i></a>
-              </div>
-              <!-- /.main-menu -->
+                <div class="heading-section col-md-12 text-center">
+                    <h2>UPCOMING EVENTS</h2>
+                </div>
+                <!-- /.heading-section -->
             </div>
             <!-- /.row -->
-          </div>
-          <!-- /#menu-wrapper -->
-          <div class="menu-responsive hidden-md hidden-lg">
-            <ul>
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#services">Events</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#our-team">Committee</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <!-- /.menu-responsive -->
+            <div class="row">
+                <div class="portfolio-item col-md-3 col-sm-6">
+                    <div class="portfolio-thumb">
+                        <img src="images/gallery/ic.png" alt="">
+                        <div class="portfolio-overlay">
+                            <h3>ICC Meet</h3>
+                            <a href="images/gallery/ic.png" data-rel="lightbox" class="expand">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+                        <!-- /.portfolio-overlay -->
+                    </div>
+                    <!-- /.portfolio-thumb -->
+                </div>
+                <!-- /.col-md-3 -->
+                <div class="portfolio-item col-md-3 col-sm-6">
+                    <div class="portfolio-thumb">
+                        <img src="images/gallery/basheer.jpg" alt="">
+                        <div class="portfolio-overlay">
+                            <h3>ICC Meet</h3>
+                            <p>Basheer Pattelthazam on topic "Life:Beneficial or Deleterious"</p>
+                            <a href="images/gallery/basheer.jpg" data-rel="lightbox" class="expand">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+                        <!-- /.portfolio-overlay -->
+                    </div>
+                    <!-- /.portfolio-thumb -->
+                </div>
+                <!-- /.col-md-3 -->
+                <div class="portfolio-item col-md-3 col-sm-6">
+                    <div class="portfolio-thumb">
+                        <img src="images/gallery/hameed.jpg" alt="">
+                        <div class="portfolio-overlay">
+                            <h3>ICC Meet</h3>
+                            <p>Abdul Hameed Dharimi on topic "Campus Life in Islam" </p>
+                            <a href="images/gallery/hameed.jpg" data-rel="lightbox" class="expand">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+                        <!-- /.portfolio-overlay -->
+                    </div>
+                    <!-- /.portfolio-thumb -->
+                </div>
+                <!-- /.col-md-3 -->
+                <div class="portfolio-item col-md-3 col-sm-6">
+                    <div class="portfolio-thumb">
+                        <img src="images/gallery/shahid.jpg" alt="">
+                        <div class="portfolio-overlay">
+                            <h3>ICC Meet</h3>
+                            <p>Shahid Muslim Farooqi on topic "Turn Before Return"</p>
+                            <a href="images/gallery/shahid.jpg" data-rel="lightbox" class="expand">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+                        <!-- /.portfolio-overlay -->
+                    </div>
+                    <!-- /.portfolio-thumb -->
+                </div>
+                <!-- /.col-md-3 -->
+            </div>
+            <!-- /.row -->
         </div>
         <!-- /.container -->
-      </div>
-      <!-- /.main-header -->
     </div>
-    <!-- /.site-header -->
-    <div class="site-slider">
-      <div class="slider">
-        <div class="flexslider">
-          <ul class="slides">
-            <li>
-              <div class="overlay"></div>
-              <img src="images/slide1.jpg" alt="">
-              <div class="slider-caption visible-md visible-lg">
-                <h2>Inception</h2>
-                <p>The Islamic Cultural Center (ICC) was founded in 1989 by a group of well guided muslims of College of Engineering, Trivandrum. It has now evolved into an organisation which caters the needs of muslims in the college. ICC had its humble
-                  beginnings in a rented apartment and now it has flourished into a well structured organisation occupying a three storey building.</p>
-              </div>
-            </li>
-            <li>
-              <div class="overlay"></div>
-              <img src="images/slide2.jpg" alt="">
-              <div class="slider-caption visible-md visible-lg">
-                <h2>Accentuate</h2>
-                <p>Since its establishment, ICC has been a platform for Muslim students to interact and share their views on various topics. It is a non aligned institution which has no affiliation with any Islamic or political organisation. ICC plans to
-                  share and propagate the teachings of the Qur'an and Prophet Muhammad (PBUH) to the student body and integrate them into a single mould.</p>
-              </div>
-            </li>
-            <li>
-              <div class="overlay"></div>
-              <img src="images/slide3.jpg" alt="">
-              <div class="slider-caption visible-md visible-lg">
-                <h2>Features</h2>
-                <p>ICC conducts regular Qur'an classes, professional meets, Hadith class and talks. Its own independent non-profit mess caters for the needs of hundreds of students. The ICC library equipped with several publications from around the world
-                  covers world famous debates, symposiums and programs.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <!-- /.flexslider -->
-      </div>
-      <!-- /.slider -->
-    </div>
-    <!-- /.site-slider -->
-  </div>
-  <!-- /.site-main -->
-
-
-  <div class="content-section" id="services">
-    <div class="container">
-      <div class="row">
-        <div class="heading-section col-md-12 text-center">
-          <h2>UPCOMING EVENTS</h2>
-        </div>
-        <!-- /.heading-section -->
-      </div>
-      <!-- /.row -->
-      <div class="row">
-        <div class="portfolio-item col-md-3 col-sm-6">
-          <div class="portfolio-thumb">
-            <img src="images/gallery/ic.png" alt="">
-            <div class="portfolio-overlay">
-              <h3>ICC Meet</h3>
-              <a href="images/gallery/ic.png" data-rel="lightbox" class="expand">
-                                    <i class="fa fa-search"></i>
-                                </a>
-            </div>
-            <!-- /.portfolio-overlay -->
-          </div>
-          <!-- /.portfolio-thumb -->
-        </div>
-        <!-- /.col-md-3 -->
-        <div class="portfolio-item col-md-3 col-sm-6">
-          <div class="portfolio-thumb">
-            <img src="images/gallery/basheer.jpg" alt="">
-            <div class="portfolio-overlay">
-              <h3>ICC Meet</h3>
-              <p>Basheer Pattelthazam on topic "Life:Beneficial or Deleterious"</p>
-              <a href="images/gallery/basheer.jpg" data-rel="lightbox" class="expand">
-                                    <i class="fa fa-search"></i>
-                                </a>
-            </div>
-            <!-- /.portfolio-overlay -->
-          </div>
-          <!-- /.portfolio-thumb -->
-        </div>
-        <!-- /.col-md-3 -->
-        <div class="portfolio-item col-md-3 col-sm-6">
-          <div class="portfolio-thumb">
-            <img src="images/gallery/hameed.jpg" alt="">
-            <div class="portfolio-overlay">
-              <h3>ICC Meet</h3>
-              <p>Abdul Hameed Dharimi on topic "Campus Life in Islam" </p>
-              <a href="images/gallery/hameed.jpg" data-rel="lightbox" class="expand">
-                                    <i class="fa fa-search"></i>
-                                </a>
-            </div>
-            <!-- /.portfolio-overlay -->
-          </div>
-          <!-- /.portfolio-thumb -->
-        </div>
-        <!-- /.col-md-3 -->
-        <div class="portfolio-item col-md-3 col-sm-6">
-          <div class="portfolio-thumb">
-            <img src="images/gallery/shahid.jpg" alt="">
-            <div class="portfolio-overlay">
-              <h3>ICC Meet</h3>
-              <p>Shahid Muslim Farooqi on topic "Turn Before Return"</p>
-              <a href="images/gallery/shahid.jpg" data-rel="lightbox" class="expand">
-                                    <i class="fa fa-search"></i>
-                                </a>
-            </div>
-            <!-- /.portfolio-overlay -->
-          </div>
-          <!-- /.portfolio-thumb -->
-        </div>
-        <!-- /.col-md-3 -->
-      </div>
-      <!-- /.row -->
-    </div>
-    <!-- /.container -->
-  </div>
-  <!-- /#services -->
+    <!-- /#services -->
 
 
 
-  <div class="content-section" id="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="heading-section col-md-12 text-center">
-          <h2>Our Yearly Portfolio</h2>
-          <p>What we have done so far this year</p>
-        </div>
-        <!-- /.heading-section -->
-      </div>
-      <!-- /.row -->
-      <div class="row">
-        <div class="portfolio-item col-md-3 col-sm-6">
-          <div class="portfolio-thumb">
-            <img src="images/gallery/p1.jpg" alt="">
-            <div class="portfolio-overlay">
-              <h3>Students Meet</h3>
-              <p>Shahid Muslim Farooqi giving a talk on "Turn Before Return".</p>
-              <a href="images/gallery/p1.jpg" data-rel="lightbox" class="expand">
-                                    <i class="fa fa-search"></i>
-                                </a>
-            </div>
-            <!-- /.portfolio-overlay -->
-          </div>
-          <!-- /.portfolio-thumb -->
-        </div>
-        <!-- /.portfolio-item -->
-        <div class="portfolio-item col-md-3 col-sm-6">
-          <div class="portfolio-thumb">
-            <img src="images/gallery/p2.jpg" alt="">
-            <div class="portfolio-overlay">
-              <h3>Students Meet</h3>
-              <p>Basheer Pattelthazam giving a talk on topic "Life:Beneficial or Deleterious"</p>
-              <a href="images/gallery/p2.jpg" data-rel="lightbox" class="expand">
-                                    <i class="fa fa-search"></i>
-                                </a>
-            </div>
-            <!-- /.portfolio-overlay -->
-          </div>
-          <!-- /.portfolio-thumb -->
-        </div>
-        <!-- /.portfolio-item -->
-        <div class="portfolio-item col-md-3 col-sm-6">
-          <div class="portfolio-thumb">
-            <img src="images/gallery/p7.jpg" alt="">
-            <div class="portfolio-overlay">
-              <h3>Students Meet</h3>
-              <p>The Ameer of the previous committee,Muhammed Shameem, giving an introductory speech.</p>
-              <a href="images/gallery/p7.jpg" data-rel="lightbox" class="expand">
-                                    <i class="fa fa-search"></i>
-                                </a>
-            </div>
-            <!-- /.portfolio-overlay -->
-          </div>
-          <!-- /.portfolio-thumb -->
-        </div>
-        <!-- /.portfolio-item -->
-        <div class="portfolio-item col-md-3 col-sm-6">
-          <div class="portfolio-thumb">
-            <img src="images/gallery/p8.jpg" alt="">
-            <div class="portfolio-overlay">
-              <h3>Students Meet</h3>
-              <p>ICC Annual magazine published Abdul Rasheed</p>
-              <a href="images/gallery/p8.jpg" data-rel="lightbox" class="expand">
-                                    <i class="fa fa-search"></i>
-                                </a>
-            </div>
-            <!-- /.portfolio-overlay -->
-          </div>
-          <!-- /.portfolio-thumb -->
-        </div>
-        <!-- /.portfolio-item -->
-        <div class="portfolio-item col-md-3 col-sm-6">
-          <div class="portfolio-thumb">
-            <img src="images/gallery/p3.jpg" alt="">
-            <div class="portfolio-overlay">
-              <h3>Ineractive Discussions</h3>
-              <p>A number of interactive discussions were held in ICC were non-muslim students actively participated and learned more about Islam.</p>
-              <a href="images/gallery/p3.jpg" data-rel="lightbox" class="expand">
-                                    <i class="fa fa-search"></i>
-                                </a>
-            </div>
-            <!-- /.portfolio-overlay -->
-          </div>
-          <!-- /.portfolio-thumb -->
-        </div>
-        <!-- /.portfolio-item -->
-        <div class="portfolio-item col-md-3 col-sm-6">
-          <div class="portfolio-thumb">
-            <img src="images/gallery/p4.jpg" alt="">
-            <div class="portfolio-overlay">
-              <h3>Quiz</h3>
-              <p>Quiz competitions were conducted to test Islamic knowledge in students. The winners were given prizes as a token of appreciation.</p>
-              <a href="images/gallery/p4.jpg" data-rel="lightbox" class="expand">
-                                    <i class="fa fa-search"></i>
-                                </a>
-            </div>
-            <!-- /.portfolio-overlay -->
-          </div>
-          <!-- /.portfolio-thumb -->
-        </div>
-        <!-- /.portfolio-item -->
-        <div class="portfolio-item col-md-3 col-sm-6">
-          <div class="portfolio-thumb">
-            <img src="images/gallery/p5.jpg" alt="">
-            <div class="portfolio-overlay">
-              <h3>Meetings</h3>
-              <p>Regular meetings were conducted to address different issues and plan the growth of ICC.</p>
-              <a href="images/gallery/p5.jpg" data-rel="lightbox" class="expand">
-                                    <i class="fa fa-search"></i>
-                                </a>
-            </div>
-            <!-- /.portfolio-overlay -->
-          </div>
-          <!-- /.portfolio-thumb -->
-        </div>
-        <!-- /.portfolio-item -->
-        <div class="portfolio-item col-md-3 col-sm-6">
-          <div class="portfolio-thumb">
-            <img src="images/gallery/p6.jpeg" alt="">
-            <div class="portfolio-overlay">
-              <h3>ICC Mess</h3>
-              <p>The non-profit ICC mess provided quality food at low prices for the student body.</p>
-              <a href="images/gallery/p6.jpeg" data-rel="lightbox" class="expand">
-                                    <i class="fa fa-search"></i>
-                                </a>
-            </div>
-            <!-- /.portfolio-overlay -->
-          </div>
-          <!-- /.portfolio-thumb -->
-        </div>
-        <!-- /.portfolio-item -->
-      </div>
-      <!-- /.row -->
-    </div>
-    <!-- /.container -->
-  </div>
-  <!-- /#portfolio -->
-
-
-
-
-  <div class="content-section" id="our-team">
-    <div class="container">
-      <div class="row">
-        <div class="heading-section col-md-12 text-center">
-          <h2>Our COMMITTEE</h2>
-          <p>CONTACT our COMMITTEE MEMBERS and LEARN MOREabout ICC</p>
-        </div>
-        <!-- /.heading-section -->
-      </div>
-      <!-- /.row -->
-      <div class="row">
-        <div class="team-member col-md-4 col-md-offset-4 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/Adhil.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Abdul Adhil</h3>
-              <span>AMEER</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/abdul.adil.9634" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-      </div>
-      <!-- /.row -->
-      <div class="row">
-        <div class="team-member col-md-3 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/Shezin.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Shezin Ashraf</h3>
-              <span>GENERAL SECRETARY</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/shezin.ashraf.50" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-        <div class="team-member col-md-3 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/Amir.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Amir Shahal</h3>
-              <span>JOINT SECRETARY</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/amir.shahal.7" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-        <div class="team-member col-md-3 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/Habeeb.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Mohammed Habeeb</h3>
-              <span dw_span_id="true">JOINT SECRETARY</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/mohammed.habeeb.735" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-        <div class="team-member col-md-3 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/Sali.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Ahamad Swalih CK</h3>
-              <span dw_span_id="true">JOINT SECRETARY</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/ahmadswalihck" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-        </div>
-        <!-- /.row-->
-         <div class="row">
-        <div class="team-member col-md-3 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/JunaidPK.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Muhammed Junaid P K</h3>
-              <span>DA'WAH WING</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/muhammad.junaidpk.1" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-        <div class="team-member col-md-3 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/Afeef.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Muhammed Afeef</h3>
-              <span>DA'WAH WING</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/afeef98" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-        <div class="team-member col-md-3 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/Shabeer.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Shabeer</h3>
-              <span>DA'WAH WING</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/mohammed.s.vk.7" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-        <div class="team-member col-md-3 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/Thanazzal.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Thanazzal Nihal</h3>
-              <span>DA'WAH WING</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/thanazzal.nihal" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-      </div>
-      <!-- /.row -->
-        <div class = "row">
-        <div class="team-member col-md-3 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/Musadhiq.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Muhamed Musadiq</h3>
-              <span>TREASURER</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/jasfir.mushadhiq" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-        <div class="team-member col-md-3 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/JunaidT.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Junaid T</h3>
-              <span dw_span_id="true">MESS DIRECTOR</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/junaid.t.10" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-        <div class="team-member col-md-3 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/Safthar.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Ahammed Safthar</h3>
-              <span>MESS DIRECTOR</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/ahammed.safthar" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-        <div class="team-member col-md-3 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/Amjad.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Amjad Ashraf</h3>
-              <span>MESS DIRECTOR</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/amjadashraf.m" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-      </div>
-      <!-- /.row -->
-      <div class="row">
-        <div class="team-member col-md-3 col-md-offset-2 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/Saheel.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Asim Saheel</h3>
-              <span>MAINTANENCE SECRETARY</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/asim.saheel" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-        <div class="team-member col-md-3 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/Aslam.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Aslam Chittangadan</h3>
-              <span dw_span_id="true">MAINTANENCE SECRETARY</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/profile.php?id=100005429553718" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-        <div class="team-member col-md-3 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/FazilKT.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Fazil K T</h3>
-              <span dw_span_id="true">MAINTANENCE SECRETARY</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/fazil.wandoor" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-      </div>
-      <div class="row">
-          <div class="team-member col-md-3 col-sm-6">
-              <div class="member-thumb">
-                <img src="images/Althaf.jpg" alt="">
-                <div class="team-overlay">
-                  <h3>Althaf Hussain</h3>
-                  <span>PROGRAM INCHARGE</span>
-                  <ul class="social">
-                    <li><a href="https://www.facebook.com/althaf.ktpt" class="fa fa-facebook"></a></li>
-                  </ul>
+    <div class="content-section" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="heading-section col-md-12 text-center">
+                    <h2>Our Yearly Portfolio</h2>
+                    <p>What we have done so far this year</p>
                 </div>
-                <!-- /.team-overlay -->
-              </div>
-              <!-- /.member-thumb -->
+                <!-- /.heading-section -->
             </div>
-        <div class="team-member col-md-3 col- col-sm-6">
-          <div class="member-thumb">
-            <img src="images/Majid.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Majid Mahmood</h3>
-              <span>LIBRARY SECRETARY</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/majid.mahmood.750" class="fa fa-facebook"></a></li>
-              </ul>
+            <!-- /.row -->
+            <div class="row">
+                <div class="portfolio-item col-md-3 col-sm-6">
+                    <div class="portfolio-thumb">
+                        <img src="images/gallery/p1.jpg" alt="">
+                        <div class="portfolio-overlay">
+                            <h3>Students Meet</h3>
+                            <p>Shahid Muslim Farooqi giving a talk on "Turn Before Return".</p>
+                            <a href="images/gallery/p1.jpg" data-rel="lightbox" class="expand">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+                        <!-- /.portfolio-overlay -->
+                    </div>
+                    <!-- /.portfolio-thumb -->
+                </div>
+                <!-- /.portfolio-item -->
+                <div class="portfolio-item col-md-3 col-sm-6">
+                    <div class="portfolio-thumb">
+                        <img src="images/gallery/p2.jpg" alt="">
+                        <div class="portfolio-overlay">
+                            <h3>Students Meet</h3>
+                            <p>Basheer Pattelthazam giving a talk on topic "Life:Beneficial or Deleterious"</p>
+                            <a href="images/gallery/p2.jpg" data-rel="lightbox" class="expand">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+                        <!-- /.portfolio-overlay -->
+                    </div>
+                    <!-- /.portfolio-thumb -->
+                </div>
+                <!-- /.portfolio-item -->
+                <div class="portfolio-item col-md-3 col-sm-6">
+                    <div class="portfolio-thumb">
+                        <img src="images/gallery/p7.jpg" alt="">
+                        <div class="portfolio-overlay">
+                            <h3>Students Meet</h3>
+                            <p>The Ameer of the previous committee,Muhammed Shameem, giving an introductory speech.</p>
+                            <a href="images/gallery/p7.jpg" data-rel="lightbox" class="expand">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+                        <!-- /.portfolio-overlay -->
+                    </div>
+                    <!-- /.portfolio-thumb -->
+                </div>
+                <!-- /.portfolio-item -->
+                <div class="portfolio-item col-md-3 col-sm-6">
+                    <div class="portfolio-thumb">
+                        <img src="images/gallery/p8.jpg" alt="">
+                        <div class="portfolio-overlay">
+                            <h3>Students Meet</h3>
+                            <p>ICC Annual magazine published Abdul Rasheed</p>
+                            <a href="images/gallery/p8.jpg" data-rel="lightbox" class="expand">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+                        <!-- /.portfolio-overlay -->
+                    </div>
+                    <!-- /.portfolio-thumb -->
+                </div>
+                <!-- /.portfolio-item -->
+                <div class="portfolio-item col-md-3 col-sm-6">
+                    <div class="portfolio-thumb">
+                        <img src="images/gallery/p3.jpg" alt="">
+                        <div class="portfolio-overlay">
+                            <h3>Ineractive Discussions</h3>
+                            <p>A number of interactive discussions were held in ICC were non-muslim students actively participated and learned more about Islam.</p>
+                            <a href="images/gallery/p3.jpg" data-rel="lightbox" class="expand">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+                        <!-- /.portfolio-overlay -->
+                    </div>
+                    <!-- /.portfolio-thumb -->
+                </div>
+                <!-- /.portfolio-item -->
+                <div class="portfolio-item col-md-3 col-sm-6">
+                    <div class="portfolio-thumb">
+                        <img src="images/gallery/p4.jpg" alt="">
+                        <div class="portfolio-overlay">
+                            <h3>Quiz</h3>
+                            <p>Quiz competitions were conducted to test Islamic knowledge in students. The winners were given prizes as a token of appreciation.</p>
+                            <a href="images/gallery/p4.jpg" data-rel="lightbox" class="expand">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+                        <!-- /.portfolio-overlay -->
+                    </div>
+                    <!-- /.portfolio-thumb -->
+                </div>
+                <!-- /.portfolio-item -->
+                <div class="portfolio-item col-md-3 col-sm-6">
+                    <div class="portfolio-thumb">
+                        <img src="images/gallery/p5.jpg" alt="">
+                        <div class="portfolio-overlay">
+                            <h3>Meetings</h3>
+                            <p>Regular meetings were conducted to address different issues and plan the growth of ICC.</p>
+                            <a href="images/gallery/p5.jpg" data-rel="lightbox" class="expand">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+                        <!-- /.portfolio-overlay -->
+                    </div>
+                    <!-- /.portfolio-thumb -->
+                </div>
+                <!-- /.portfolio-item -->
+                <div class="portfolio-item col-md-3 col-sm-6">
+                    <div class="portfolio-thumb">
+                        <img src="images/gallery/p6.jpeg" alt="">
+                        <div class="portfolio-overlay">
+                            <h3>ICC Mess</h3>
+                            <p>The non-profit ICC mess provided quality food at low prices for the student body.</p>
+                            <a href="images/gallery/p6.jpeg" data-rel="lightbox" class="expand">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+                        <!-- /.portfolio-overlay -->
+                    </div>
+                    <!-- /.portfolio-thumb -->
+                </div>
+                <!-- /.portfolio-item -->
             </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
+            <!-- /.row -->
         </div>
-        <!-- /.team-member -->
-        <div class="team-member col-md-3 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/Abinshah.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Abinsha K Shaji</h3>
-              <span>LIBRARY SECRETARY</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/abinshak.shaji" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-        <div class="team-member col-md-3 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/Asgar.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Mohamed Asgar</h3>
-              <span>LIBRARY SECRETARY</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/mohamed.asgar.79" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-      </div>
-      <!-- /.row -->
-      <div class="row">
-          <div class="team-member col-md-3 col-md-offset-3 col-sm-6">
-            <div class="member-thumb">
-              <img src="images/SuhailCR.jpg" alt="">
-              <div class="team-overlay">
-                <h3>Muhammed Suhail C R</h3>
-                <span><em>I.T. INCHARGE </em></span>
-                <ul class="social">
-                  <li><a href="https://www.facebook.com/suhailcr.007" class="fa fa-facebook"></a></li>
-                </ul>
-              </div>
-              <!-- /.team-overlay -->
-            </div>
-            <!-- /.member-thumb -->
-          </div>
-          <!-- /.team-member -->
-          <div class="team-member col-md-3 col-sm-6">
-            <div class="member-thumb">
-              <img src="images/Bilal.jpg" alt="">
-              <div class="team-overlay">
-                <h3>Muhammed Bilal</h3>
-                <span><em>I.T. INCHARGE </em></span>
-                <ul class="social">
-                  <li><a href="https://www.facebook.com/muhammedbilal.bilal.338" class="fa fa-facebook"></a></li>
-                </ul>
-              </div>
-              <!-- /.team-overlay -->
-            </div>
-            <!-- /.member-thumb -->
-          </div>
-          <!-- /.team-member -->
-        </div>
-      <!-- /.row -->
-     
-      
-      <div class="row">
-        <!-- <div class="team-member col-md-3 col-md-offset-2 col-sm-6"> -->
-        <div class="team-member col-md-3 col-md-offset-2 col-sm-6">
-
-          <div class="member-thumb">
-            <img src="images/Amal.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Amal Mohammed P</h3>
-              <span>S.Q.U.I.F. DIRECTOR</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/amalpac" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-        <!-- <div class="team-member col-md-3 col-md-offset-2 col-sm-6"> -->
-            <div class="team-member col-md-3 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/Hamraz.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Hamraz Samad</h3>
-              <span>S.Q.U.I.F. DIRECTOR</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/hamrazsamad.pn" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-     
-        <!-- /.team-member -->
-        <div class="team-member col-md-3 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/Basith.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Basith Hameem</h3>
-              <span>PG REPRESENTATIVE</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/basith.hameem" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-      </div>
-      <!-- /.row -->
-      <!-- /.row -->
-      <div class="row">
-        <div class="team-member col-md-3 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/Fuad.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Fuad Mansoor</h3>
-              <span dw_span_id="true">S1,S2 BATCH REPRESENTATIVE</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/fuadmansoork" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-        <div class="team-member col-md-3 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/AjmalMK.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Ajmal M K</h3>
-              <span dw_span_id="true">S3,S4 BATCH REPRESENTATIVE</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/ajmal.mk.58" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-        <div class="team-member col-md-3 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/Hashir.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Hashir Musthafa</h3>
-              <span>S5,S6 BATCH REPRESENTATIVE</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/hashircm" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-        <div class="team-member col-md-3 col-sm-6">
-          <div class="member-thumb">
-            <img src="images/Arshal.jpg" alt="">
-            <div class="team-overlay">
-              <h3>Muhammed Arshal</h3>
-              <span>S8 BATCH REPRESENTATIVE</span>
-              <ul class="social">
-                <li><a href="https://www.facebook.com/muhammed.arshal.98" class="fa fa-facebook"></a></li>
-              </ul>
-            </div>
-            <!-- /.team-overlay -->
-          </div>
-          <!-- /.member-thumb -->
-        </div>
-        <!-- /.team-member -->
-      </div>
-      <!-- /.row -->
-      <div class="row">
-          <div class="team-member col-md-3 col-md-offset-3 col-sm-6">
-            <div class="member-thumb">
-              <img src="images/Dilshan.jpg" alt="">
-              <div class="team-overlay">
-                <h3>Dilshan Pudukkudi</h3>
-                <span>BLOOD DONATION INCHARGE</span>
-                <ul class="social">
-                  <li><a href="https://www.facebook.com/dilshan.pudukkudi.5" class="fa fa-facebook"></a></li>
-                </ul>
-              </div>
-              <!-- /.team-overlay -->
-            </div>
-            <!-- /.member-thumb -->
-          </div>
-          <!-- /.team-member -->
-          <div class="team-member col-md-3 col-sm-6">
-            <div class="member-thumb">
-              <img src="images/Salah.jpg" alt="">
-              <div class="team-overlay">
-                <h3>Mohammed Salahudheen M</h3>
-                <span dw_span_id="true">BLOOD DONATION INCHARGE</span>
-                <ul class="social">
-                  <li><a href="https://www.facebook.com/salah.madambi" class="fa fa-facebook"></a></li>
-                </ul>
-              </div>
-              <!-- /.team-overlay -->
-            </div>
-            <!-- /.member-thumb -->
-          </div>
-          <!-- /.team-member -->
-        </div>
-
-      <!-- /.row -->
+        <!-- /.container -->
     </div>
-    <!-- /.row -->
-
-
-    <div class="row">
-      <div class="col-md-8 col-sm-6">
-        <p>
-          <!-- spacing for mobile viewing --><br><br>
-        </p>
-      </div>
-      <!-- /.col-md-8 -->
-    </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container -->
-  </div>
-  <!-- /#our-team -->
+    <!-- /#portfolio -->
 
 
 
 
-  <div class="content-section" id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="heading-section col-md-12 text-center">
-          <h2>Contact Us</h2>
-          <p>Feel free to send us a message</p>
+    <div class="content-section" id="our-team">
+        <div class="container">
+            <div class="row">
+                <div class="heading-section col-md-12 text-center">
+                    <h2>Our COMMITTEE</h2>
+                    <p>CONTACT our COMMITTEE MEMBERS and LEARN MOREabout ICC</p>
+                </div>
+                <!-- /.heading-section -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="team-member col-md-4 col-md-offset-4 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Adhil.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Abdul Adhil</h3>
+                            <span>AMEER</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/abdul.adil.9634" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Shezin.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Shezin Ashraf</h3>
+                            <span>GENERAL SECRETARY</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/shezin.ashraf.50" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Amir.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Amir Shahal</h3>
+                            <span>JOINT SECRETARY</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/amir.shahal.7" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Habeeb.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Mohammed Habeeb</h3>
+                            <span dw_span_id="true">JOINT SECRETARY</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/mohammed.habeeb.735" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Sali.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Ahamad Swalih CK</h3>
+                            <span dw_span_id="true">JOINT SECRETARY</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/ahmadswalihck" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+            </div>
+            <!-- /.row-->
+            <div class="row">
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/JunaidPK.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Muhammed Junaid P K</h3>
+                            <span>DA'WAH WING</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/muhammad.junaidpk.1" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Afeef.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Muhammed Afeef</h3>
+                            <span>DA'WAH WING</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/afeef98" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Shabeer.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Shabeer</h3>
+                            <span>DA'WAH WING</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/mohammed.s.vk.7" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Thanazzal.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Thanazzal Nihal</h3>
+                            <span>DA'WAH WING</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/thanazzal.nihal" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Musadhiq.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Muhamed Musadiq</h3>
+                            <span>TREASURER</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/jasfir.mushadhiq" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/JunaidT.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Junaid T</h3>
+                            <span dw_span_id="true">MESS DIRECTOR</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/junaid.t.10" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Safthar.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Ahammed Safthar</h3>
+                            <span>MESS DIRECTOR</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/ahammed.safthar" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Amjad.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Amjad Ashraf</h3>
+                            <span>MESS DIRECTOR</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/amjadashraf.m" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="team-member col-md-3 col-md-offset-2 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Saheel.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Asim Saheel</h3>
+                            <span>MAINTANENCE SECRETARY</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/asim.saheel" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Aslam.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Aslam Chittangadan</h3>
+                            <span dw_span_id="true">MAINTANENCE SECRETARY</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/profile.php?id=100005429553718" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/FazilKT.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Fazil K T</h3>
+                            <span dw_span_id="true">MAINTANENCE SECRETARY</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/fazil.wandoor" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+            </div>
+            <div class="row">
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Althaf.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Althaf Hussain</h3>
+                            <span>PROGRAM INCHARGE</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/althaf.ktpt" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <div class="team-member col-md-3 col- col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Majid.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Majid Mahmood</h3>
+                            <span>LIBRARY SECRETARY</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/majid.mahmood.750" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Abinshah.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Abinsha K Shaji</h3>
+                            <span>LIBRARY SECRETARY</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/abinshak.shaji" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Asgar.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Mohamed Asgar</h3>
+                            <span>LIBRARY SECRETARY</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/mohamed.asgar.79" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="team-member col-md-3 col-md-offset-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/SuhailCR.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Muhammed Suhail C R</h3>
+                            <span><em>I.T. INCHARGE </em></span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/suhailcr.007" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Bilal.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Muhammed Bilal</h3>
+                            <span><em>I.T. INCHARGE </em></span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/muhammedbilal.bilal.338" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+            </div>
+            <!-- /.row -->
+
+
+            <div class="row">
+                <!-- <div class="team-member col-md-3 col-md-offset-2 col-sm-6"> -->
+                <div class="team-member col-md-3 col-md-offset-2 col-sm-6">
+
+                    <div class="member-thumb">
+                        <img src="images/Amal.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Amal Mohammed P</h3>
+                            <span>S.Q.U.I.F. DIRECTOR</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/amalpac" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+                <!-- <div class="team-member col-md-3 col-md-offset-2 col-sm-6"> -->
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Hamraz.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Hamraz Samad</h3>
+                            <span>S.Q.U.I.F. DIRECTOR</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/hamrazsamad.pn" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+
+                <!-- /.team-member -->
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Basith.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Basith Hameem</h3>
+                            <span>PG REPRESENTATIVE</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/basith.hameem" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+            </div>
+            <!-- /.row -->
+            <!-- /.row -->
+            <div class="row">
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Fuad.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Fuad Mansoor</h3>
+                            <span dw_span_id="true">S1,S2 BATCH REPRESENTATIVE</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/fuadmansoork" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/AjmalMK.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Ajmal M K</h3>
+                            <span dw_span_id="true">S3,S4 BATCH REPRESENTATIVE</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/ajmal.mk.58" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Hashir.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Hashir Musthafa</h3>
+                            <span>S5,S6 BATCH REPRESENTATIVE</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/hashircm" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Arshal.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Muhammed Arshal</h3>
+                            <span>S8 BATCH REPRESENTATIVE</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/muhammed.arshal.98" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="team-member col-md-3 col-md-offset-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Dilshan.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Dilshan Pudukkudi</h3>
+                            <span>BLOOD DONATION INCHARGE</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/dilshan.pudukkudi.5" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+                <div class="team-member col-md-3 col-sm-6">
+                    <div class="member-thumb">
+                        <img src="images/Salah.jpg" alt="">
+                        <div class="team-overlay">
+                            <h3>Mohammed Salahudheen M</h3>
+                            <span dw_span_id="true">BLOOD DONATION INCHARGE</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/salah.madambi" class="fa fa-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.team-overlay -->
+                    </div>
+                    <!-- /.member-thumb -->
+                </div>
+                <!-- /.team-member -->
+            </div>
+
+            <!-- /.row -->
         </div>
-        <!-- /.heading-section -->
-      </div>
-      <!-- /.row -->
-      <div class="row">
-        <div class="col-md-12">
-          <div class="googlemap-wrapper">
-            <div id="map_canvas" class="map-canvas"></div>
-          </div>
-          <!-- /.googlemap-wrapper -->
+        <!-- /.row -->
+
+
+        <div class="row">
+            <div class="col-md-8 col-sm-6">
+                <p>
+                    <!-- spacing for mobile viewing --><br><br>
+                </p>
+            </div>
+            <!-- /.col-md-8 -->
         </div>
-        <!-- /.col-md-12 -->
-      </div>
-      <!-- /.row -->
-      <div class="row">
-        <div class="col-md-7 col-sm-6">
-          <ul class="contact-info">
-            <li>Phone: +91 7025208215</li>
-            <li>Email:
-              <a href="mailto:icctvmcet@gmail.com">
-                <font color="#1D4BE0">icctvmcet@gmail.com</font>
-              </a>
-            </li>
-            <li>Address:<br> Opp. Main gate, College of Engineering, Sreekariyam Kulathoor RoadSreekariyam Kulathoor Road, Trivandrum, Kerela 695016</li>
-          </ul>
-          <!-- spacing for mobile viewing --><br><br>
-        </div>
-        <!-- /.col-md-7 -->
-        <div class="col-md-5 col-sm-6">
-          <div class="contact-form">
-            <form method="post" name="contactform" id="contactform">
-              <p>
-                <input name="name" type="text" id="name" placeholder="Your Name">
-              </p>
-              <p>
-                <input name="email" type="text" id="email" placeholder="Your Email">
-              </p>
-              <p>
-                <input name="subject" type="text" id="subject" placeholder="Subject">
-              </p>
-              <p>
-                <textarea name="comments" id="comments" placeholder="Message"></textarea>
-              </p>
-              <input type="submit" class="mainBtn" id="submit" value="Send Message">
-            </form>
-          </div>
-          <!-- /.contact-form -->
-        </div>
-        <!-- /.col-md-5 -->
-      </div>
-      <!-- /.row -->
+        <!-- /.row -->
     </div>
     <!-- /.container -->
-  </div>
-  <!-- /#contact -->
-
-  <div id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-xs-12 text-left">
-          Copyright © 2015 Islamic Cultural Center
-        </div>
-        <!-- /.text-center -->
-        <div class="col-md-4 hidden-xs text-right">
-          <a href="#top" id="go-top">Back to top</a>
-        </div>
-        <!-- /.text-center -->
-      </div>
-      <!-- /.row -->
     </div>
-    <!-- /.container -->
-  </div>
-  <!-- /#footer -->
-
-
-  <script src="js/vendor/jquery-1.11.0.min.js"></script>
-  <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')
-  </script>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')
-  </script>
+    <!-- /#our-team -->
 
 
 
-  <!-- Google Map -->
-  <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-  <script src="js/vendor/jquery.gmap3.min.js"></script>
 
-  <!-- Google Map Init-->
-  <script type="text/javascript">
-    jQuery(function($) {
-      $('#map_canvas').gmap3({
-        marker: {
-          address: '8.547165, 76.905690'
-        },
-        map: {
-          options: {
-            zoom: 15,
-            scrollwheel: false,
-            streetViewControl: true
-          }
-        }
-      });
-    });
-  </script>
-  <!-- ICC website -->
+    <div class="content-section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="heading-section col-md-12 text-center">
+                    <h2>Contact Us</h2>
+                    <p>Feel free to send us a message</p>
+                </div>
+                <!-- /.heading-section -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="mapid" style="height: 300px"></div>
+
+                    <!--Leaflet Map-->
+                </div>
+                <!-- /.col-md-12 -->
+            </div>
+            <!-- /.row -->
+            <br />
+            <div class="row">
+                <div class="col-md-7 col-sm-6">
+                    <ul class="contact-info">
+                        <li>Phone: +91 7025208215</li>
+                        <li>Email:
+                            <a href="mailto:icctvmcet@gmail.com">
+                                <font color="#1D4BE0">icctvmcet@gmail.com</font>
+                            </a>
+                        </li>
+                        <li>Address:<br> Opp. Main gate, College of Engineering, Sreekariyam Kulathoor RoadSreekariyam Kulathoor Road, Trivandrum, Kerela 695016</li>
+                    </ul>
+                    <!-- spacing for mobile viewing --><br><br>
+                </div>
+                <!-- /.col-md-7 -->
+                <div class="col-md-5 col-sm-6">
+                    <div class="contact-form">
+                        <form method="post" name="contactform" id="contactform">
+                            <p>
+                                <input name="name" type="text" id="name" placeholder="Your Name">
+                            </p>
+                            <p>
+                                <input name="email" type="text" id="email" placeholder="Your Email">
+                            </p>
+                            <p>
+                                <input name="subject" type="text" id="subject" placeholder="Subject">
+                            </p>
+                            <p>
+                                <textarea name="comments" id="comments" placeholder="Message"></textarea>
+                            </p>
+                            <input type="submit" class="mainBtn" id="submit" value="Send Message">
+                        </form>
+                    </div>
+                    <!-- /.contact-form -->
+                </div>
+                <!-- /.col-md-5 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /#contact -->
+
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-xs-12 text-left">
+                    Copyright © 2015 Islamic Cultural Center
+                </div>
+                <!-- /.text-center -->
+                <div class="col-md-4 hidden-xs text-right">
+                    <a href="#top" id="go-top">Back to top</a>
+                </div>
+                <!-- /.text-center -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /#footer -->
+
+
+    <script src="js/vendor/jquery-1.11.0.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')
+    </script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')
+    </script>
+
+
+
+    <!--Leafletjs-->
+    <script>
+        var mymap = L.map('mapid').setView([8.547165, 76.905690], 16);
+
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+            maxZoom: 18,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+                '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            id: 'mapbox.streets'
+        }).addTo(mymap);
+        var marker = L.marker([8.547165, 76.905690]).addTo(mymap)
+        marker.bindPopup("<b>Islamic Cultural Centre</b>").openPopup();
+    </script>
+    <!-- ICC website -->
 </body>
 
 </html>
