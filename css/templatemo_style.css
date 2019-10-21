@@ -240,7 +240,7 @@ hr {
 .site-header ul.social-icons li a {
   width: 36px;
   height: 36px;
-  background-color: white;
+  background-color: transparent;
   color: #444444;
   text-align: center;
   line-height: 36px;
@@ -616,11 +616,11 @@ a.toggle-menu {
   display: inline-block;
 }
 .team-member .member-thumb .team-overlay ul.social li a {
-  width: 36px;
-  height: 36px;
-  background-color: white;
+  width: 76px;
+  height: 76px;
+  background-color: transparent;
   line-height: 40px;
-  color: #ec523f;
+  color: #0de046;
   border-radius: 18px;
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
