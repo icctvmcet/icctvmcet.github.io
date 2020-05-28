@@ -1,0 +1,120 @@
+/*----------------------- NAV-BAR ---------------------------- */
+
+
+.navigation{
+    background-color: #2a3a49 !important;
+    padding: 0px 15px;
+}
+.navigation-link{
+    color: #e0c456 ;
+    font-size: 16px;
+}
+.link-hover:hover{
+    background-color: #e0c456;
+    color: #2a3a49;
+}
+
+/*----------------------- SLIDER ---------------------------- */
+
+.slider .indicators .indicator-item.active{
+    background-color: #536575 !important;
+}
+.overlay{
+    background-color: #996a6a;
+    position: absolute;
+}
+
+/*----------------------- DESCRIPTION ---------------------------- */
+
+.move{
+    margin-top: 40px;
+}
+
+/*----------------------- CARDS ---------------------------- */
+
+.ht{    /*For Mobiles*/
+    height: 390px;
+}
+   
+@media only screen and (min-width: 640px) {     /* For tablets: */
+      
+    .ht{  
+        height: 400px;
+    }
+    
+    }
+@media only screen and (min-width: 950px) {     /* For desktop: */
+      
+    .ht{    
+        height: 420px;
+    }
+}
+@media only screen and (min-width: 1300px) {     /* For desktop with large screen */
+      
+    .ht{    
+        height: 550px;
+    }
+}
+
+/*----------------------- PARALLAX ---------------------------- */
+
+.parallax-container{
+    min-height: 380px;
+    height: auto;
+}
+
+/*----------------------- COMMITTEE ---------------------------- */
+
+.carousel{
+    height: 500px;
+}
+.committee{
+    padding: 24px 0px !important;
+}
+.zoom{                  /*  ALSO USED IN MANY PLACES FOR ICON ZOOMING*/
+    transition: transform .2s;
+}
+.zoom:hover{
+    transform: scale(1.25);
+}
+
+/*----------------------- SIDE ICON-BAR ---------------------------- */
+
+.left-sidebar{
+    position: fixed;
+    top: 50%;
+    z-index: 100;
+    transform: translateY(-50%);
+}
+.left-sidebar ul{
+    border: none;
+}
+.left-sidebar i.fab{
+    padding:21px 13px 21px 20px ;
+    display: block;
+    font-size: 20px;
+    color: white;
+}
+.left-sidebar li{
+    transition: 5s;
+}
+.left-sidebar li:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+.icon-hover :hover{
+    transition: 0.5s;
+background-color: black;
+}
+
+
+/*----------------------- FOOTER---------------------------- */
+
+.footer-one{
+    background:#2a3a49 ;
+}
+.footer-two{
+    background:#202d38 ;
+}
+
