@@ -9,8 +9,31 @@ $(document).ready(function () {
         padding: 55
     });
     $('.scrollspy').scrollSpy();
+    formcall();
 
 })
+function changer(selector) {    // changing window for registration
+    window.location.replace('./registration.html' + '?Selector=' + selector);
+}
+
+function formcall() {   // showing required content only (registration forms)
+    var registration = $('.al-1');
+    var bookcollection = $('.al-2');
+    let contribute = $('.al-3');
+    let scolarship = $('.al-4');
+    let selector = document.location.search.replace(/^.*?\=/, '');
+    if (selector === 'registration') {
+        registration.css("display", "inline");
+    } else if (selector === "bookcollection") {
+        bookcollection.css("display", "inline");
+    }
+    else if (selector === "contribute") {
+        contribute.css("display", "inline");
+    }
+    else if (selector === "scolarship") {
+        scolarship.css("display", "inline");
+    }
+}
 
 function toggleModal() {       // Modal screen activation when click on events
     var instance = M.Modal.getInstance($('#modal3'));
