@@ -1,830 +1,169 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
     <title>Islamic Cultural Centre</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Lateef&family=Ubuntu&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/homePageStyle/homePageStyle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <div class="loader-wrapper">
+      <svg
+        width="60"
+        height="94"
+        viewBox="0 0 60 94"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="icc-logo">
+          <path
+            id="large"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8.72154 0C14.4867 1.87275 26.061 8.15198 26.2373 18.2869L8.72154 29.3031C12.3202 23.2074 17.3582 8.81295 8.72154 0ZM7.39998 33.1587L25.797 21.5917L28.2206 25.3372C28.8081 26.4388 29.146 29.281 25.797 31.8368C20.6561 39.0707 10.6167 57.5926 11.5861 73.8085C12.0635 80.2346 19.3415 92.9766 44.6347 92.536C21.721 96.9792 -17.5407 92.2716 8.72193 37.8957C9.16258 37.2347 9.5151 35.3619 7.39998 33.1587Z"
+            fill="url(#paint0_linear)"
+          />
+          <path
+            id="small"
+            d="M43.203 63.0122C53.6904 54.728 47.5728 46.1207 43.203 42.8525C45.5164 48.4708 40.1185 55.7415 34.9409 58.7159C30.7988 61.0954 29.9101 66.0233 29.9836 68.1898C31.3937 85.8157 49.1518 83.3921 57.8545 79.9771C58.2071 82.7973 54.9169 86.8806 53.2277 88.5697C57.5241 86.036 61.7102 78.545 59.2867 76.8926C57.3478 75.5706 57.7444 74.1385 58.185 73.5877C57.0834 74.1753 55.2107 75.5706 56.5326 76.4519C57.8545 77.3332 57.8178 78.2145 57.6342 78.545C52.2583 82.3346 47.2423 81.0053 45.4062 79.867C36.3289 74.0504 40.1552 66.2069 43.203 63.0122Z"
+            fill="url(#paint1_linear)"
+          />
+          <path
+            id="middle"
+            d="M32.8474 54.6405C44.7449 43.1836 37.8047 32.9753 32.8474 29.3032C32.8474 31.5799 32.0322 36.9044 28.7714 39.9889C25.5106 43.0735 21.8679 48.5816 20.3991 50.895C11.1455 68.609 19.8115 81.0059 25.3564 85.0452C40.9553 93.8581 52.7867 86.4406 56.7525 81.6302C43.3568 88.7687 33.6185 83.5029 30.4238 79.9777C26.2744 76.3057 20.9499 66.0973 32.8474 54.6405Z"
+            fill="url(#paint2_linear)"
+          />
+        </g>
+        <defs>
+          <linearGradient
+            id="paint0_linear"
+            x1="42.2051"
+            y1="15.4227"
+            x2="25.4341"
+            y2="86.3004"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#F8DE8E" />
+            <stop offset="1" stop-color="#E6B515" />
+          </linearGradient>
+          <linearGradient
+            id="paint1_linear"
+            x1="44.9897"
+            y1="42.8525"
+            x2="44.9897"
+            y2="88.5697"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#FAE07B" />
+            <stop offset="1" stop-color="#E8B118" />
+          </linearGradient>
+          <linearGradient
+            id="paint2_linear"
+            x1="36.5417"
+            y1="29.3032"
+            x2="36.5417"
+            y2="89.1462"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#FAE07B" />
+            <stop offset="1" stop-color="#E8B118" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
 
-    <!-- google font -->
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&display=swap" rel="stylesheet">
-    <!-- M icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Actual MaterializeCSS (M) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <div class="home-page">
+      <header>
+        <img class="background" src="./assets/background-imge.jpg" alt="" />
 
-</head>
+        <div class="logo-section">Islamic Cultural Centre</div>
 
-<body>
-    <!-- ----------------------------NAVBAR---------------------------------------- -->
-    <section class="fnavbar">
-        <nav class="nav-fixed ">
-            <div class="nav-wrapper navigation">
-                <a href="#">
-                    <span class="brand-logo hide-on-med-and-down">Islamic Cultural Centre</span>
-                    <span class="brand-logo hide-on-large-only">ICC</span>
-                </a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a class="nav-link navigation-link link-hover waves-effect waves-light" href="#">Home</a></li>
-                    <li><a class="nav-link navigation-link link-hover" href="./src/alumni.html"> Alumni
-                            Portal</a></li>
-                    <li><a class="nav-link navigation-link link-hover" href="#" onclick="toggleModal()">Event</a></li>
-                    <li><a class="nav-link navigation-link link-hover" href="#portfolio-section">Portfolio</a></li>
-                    <li><a class="nav-link navigation-link link-hover" href="#committee-section">Committee</a></li>
-                    <li><a class="nav-link navigation-link link-hover" href="#contact-section">Contact</a></li>
-                </ul>
-            </div>
+        <div class="hamburger" id="hamburger" onclick="hamburger()">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+        <nav class="mobile-nav">
+          <ul id="mobile-nav">
+            <li onclick="redirect('home')">HOME</li>
+            <li onclick="redirect('alumni-portal')">ALUMNI PORTAL</li>
+            <li onclick="redirect('events')">EVENTS</li>
+            <li onclick="redirect('committee')">COMMITTEE</li>
+            <li onclick="redirect('about-us')">ABOUT US</li>
+          </ul>
         </nav>
-        <!-- class="navigation-link" -->
-        <ul class="sidenav navigation" id="mobile-demo">
-            <li><a href="#" style="color: #e0c456;">Home</a></li>
-            <li><a href="./src/alumni.html" style="color: #e0c456;">Alumni Portal</a></li>
-            <li><a href="#" onclick="toggleModal()" style="color: #e0c456;">Event</a></li>
-            <li><a href="#portfolio-section" style="color: #e0c456;">Portfolio</a></li>
-            <li><a href="#committee-section" style="color: #e0c456;">Committee</a></li>
-            <li><a href="#contact-section" style="color: #e0c456;">Contact</a></li>
-        </ul>
-    </section>
+        <nav class="desktop-nav">
+          <ul>
+            <li onclick="redirect('home')">HOME</li>
+            <li onclick="redirect('alumni-portal')">ALUMNI PORTAL</li>
+            <li onclick="redirect('events')">EVENTS</li>
+            <li onclick="redirect('committee')">COMMITTEE</li>
+            <li onclick="redirect('about-us')">ABOUT US</li>
+          </ul>
+        </nav>
+      </header>
 
-    <!-- ----------------------------SLIDER---------------------------------------- -->
+      <div class="ayat-section" data-aos="fade-down">
+        <p class="ayat">طَلَبُ الْعِلْمِ فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ</p>
+        <p class="ayat-meaning">
+          Seeking Knowledge is an obligation <br />
+          upon every Muslim
+        </p>
+      </div>
 
-    <section class="fslider">
-        <div class="slider">
-            <ul class="slides">
-                <li>
-                    <div class="overlay"></div>
-                    <img src="images/source/slider1.jpg" alt="first image">
-                    <div class="caption center-align white-text">
-                        <h3>Inception</h3>
-                        <h5 class="light text-lighten-3 hide-on-small-and-down">The Islamic Cultural Centre (ICC) was
-                            founded in 1989 by a
-                            group of well guided muslims of College of Engineering, Trivandrum. It has now evolved into
-                            an organisation which caters the needs of muslims in the college. ICC
-                            had its humble beginnings in a rented apartment and now it has flourished into a well
-                            structured organisation occupying a three storey building.
-                        </h5>
-                        <h6 class="light text-lighten-3 hide-on-med-and-up">The Islamic Cultural Centre (ICC) was
-                            founded in 1989 by a
-                            group of well guided muslims of College of Engineering, Trivandrum. It has now evolved into
-                            an organisation which caters the needs of muslims in the college. ICC
-                            had its humble beginnings in a rented apartment and now it has flourished into a well
-                            structured organisation occupying a three storey building.
-                        </h6>
-                    </div>
-                </li>
-                <li>
-                    <img src="images/source/slider2.jpg" alt="second image">
-                    <div class="caption center-align white-text">
-                        <h3>Accentuate</h3>
-                        <h5 class="light text-lighten-3 hide-on-small-and-down">Since its establishment, ICC has been a
-                            platform for Muslim
-                            students to interact and share their views on various topics. It is a non aligned
-                            institution which has no affiliation with any Islamic or political organisation.
-                            ICC plans to share and propagate the teachings of the Qur'an and Prophet Muhammad (PBUH) to
-                            the student body and integrate them into a single mould.
-                        </h5>
-                        <h6 class="light text-lighten-3 hide-on-med-and-up">Since its establishment, ICC has been a
-                            platform for Muslim
-                            students to interact and share their views on various topics. It is a non aligned
-                            institution which has no affiliation with any Islamic or political organisation.
-                            ICC plans to share and propagate the teachings of the Qur'an and Prophet Muhammad (PBUH) to
-                            the student body and integrate them into a single mould.
-                        </h6>
-                    </div>
-                </li>
-                <li>
-                    <img src="images/source/slider3.jpg" alt="second image">
-                    <div class="caption center-align white-text">
-                        <h3>Features</h3>
-                        <h5 class="light text-lighten-3 hide-on-small-and-down">ICC conducts regular Qur'an classes,
-                            professional meets, Hadith
-                            class and talks. Its own independent non-profit mess caters for the needs of hundreds of
-                            students. The ICC library equipped with several publications from
-                            around the world covers world famous debates, symposiums and programs.
-                        </h5>
-                        <h6 class="light text-lighten-3 hide-on-med-and-up">ICC conducts regular Qur'an classes,
-                            professional meets, Hadith
-                            class and talks. Its own independent non-profit mess caters for the needs of hundreds of
-                            students. The ICC library equipped with several publications from
-                            around the world covers world famous debates, symposiums and programs.
-                        </h6>
-                    </div>
-                </li>
-
-            </ul>
+      <div class="home-about" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="home-about-content">
+          <p>
+            The Islamic Cultural Centre (ICC) was founded in 1989 by a group of
+            well guided muslims of College of Engineering, Trivandrum. It has
+            now evolved into an organisation which caters the needs of muslims
+            in the college. ICC had its humble beginnings in a rented apartment
+            and now it has flourished into a well structured organisation
+            occupying a three storey building.
+          </p>
         </div>
-    </section>
+      </div>
 
-    <!-- ----------------------------DESCRIPTION---------------------------------------- -->
+      <div class="page-break">
+        <img src="./assets/page-break.svg" alt="" />
+      </div>
 
-    <section class="decription">
-        <div class="section white center">
-            <h2 class="header">Islamic Cultural Centre</h2>
-            <div class="row container center">
-                <div class="col center l8 s12 move">
-                    Islamic Cultural Centre is an organisation established to identify, assist and aid the muslim
-                    community of College of Engineering Trivandrum. It is located at the close proximity opposite to the
-                    college. ICC
-                    has been running under the leadership of Prof. Abdul Rasheed, Retired HOD of Mechanical Department
-                    CET, from
-                    its inception in 1989 onwards. Every year a new body of ICC Committee is elected and carry out the
-                    plans and
-                    activities of the year including weekly Qur'an classes, SQUIF activities, Islamic quiz, Islamic
-                    classes by prominent
-                    scholars and so on. ICC also provides mental and financial support to the students in need. ICC also
-                    has Student
-                    Mess and Library that provides books of syllabus related publications of various departments and
-                    also
-                    contains islamic books and Hadith's. ICC has grown over the past years with overwhelming number of
-                    students
-                    registering every year and with a huge network of Alumnis.
-                </div>
-                <div class="col center l4 s12">
-                    <img src="images/source/logo.jpeg" style="object-fit: contain;" height="200" width="auto" alt="">
-                </div>
-
-            </div>
+      <div class="event-section">
+        <div class="event-header" data-aos="fade-right" data-aos-duration="500">
+          Coming Events
         </div>
+        <div class="coming-events">
+          <img src="./assets/past-events/p1.jpg" data-aos="fade-right" alt="" />
+          <img src="./assets/past-events/p2.jpg" data-aos="fade-left" alt="" />
+          <img src="./assets/past-events/p3.jpg" data-aos="fade-right" alt="" />
         </div>
-    </section>
+      </div>
 
-    <!-- ----------------------------PORTFOLIO-CARDS ---------------------------------------- -->
+      <div class="page-break">
+        <img src="./assets/page-break.svg" alt="" />
+      </div>
 
-    <section class="fcards scrollspy" id="portfolio-section">
-        <div class="row">
-
-            <div class="col s6 m4 l3">
-                <div class="card ht hoverable">
-                    <div class="card-image">
-                        <img src="images/portfolio/p8.jpg">
-                        <span class="card-title">Students Meet</span>
-                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                class="material-icons">favorite</i></a>
-                    </div>
-                    <div class="card-content">
-                        <p>ICC Annual magazine published Abdul Rasheed</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s6 m4 l3">
-                <div class="card ht hoverable">
-                    <div class="card-image">
-                        <img src="images/portfolio/p7.jpg">
-                        <span class="card-title">Students Meet</span>
-                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                class="material-icons">favorite</i></a>
-                    </div>
-                    <div class="card-content">
-                        <p>The Ameer of the previous committee,Muhammed Shameem, giving an introductory speech.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s6 m4 l3">
-                <div class="card ht hoverable">
-                    <div class="card-image">
-                        <img src="images/portfolio/p4.jpg">
-                        <span class="card-title">Quiz</span>
-                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                class="material-icons">favorite</i></a>
-                    </div>
-                    <div class="card-content">
-                        <p>Quiz competitions were conducted to test Islamic knowledge in students. The winners were
-                            given prizes as a token of appreciation.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s6 m4 l3">
-                <div class="card ht hoverable">
-                    <div class="card-image">
-                        <img src="images/portfolio/p3.jpg">
-                        <span class="card-title">Interactive Discussions</span>
-                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                class="material-icons">favorite</i></a>
-                    </div>
-                    <div class="card-content">
-                        <p>A number of interactive discussions were held in ICC were non-muslim students actively
-                            participated and learned more about Islam.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s6 m4 l3">
-                <div class="card ht hoverable">
-                    <div class="card-image">
-                        <img src="images/portfolio/p5.jpg">
-                        <span class="card-title">Meetings</span>
-                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                class="material-icons">favorite</i></a>
-                    </div>
-                    <div class="card-content">
-                        <p>Regular meetings were conducted to address different issues and plan the growth of ICC.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s6 m4 l3 ">
-                <div class="card ht hoverable">
-                    <div class="card-image">
-                        <img src="images/portfolio/p2.jpg">
-                        <span class="card-title">Students Meet</span>
-                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                class="material-icons">favorite</i></a>
-                    </div>
-                    <div class="card-content">
-                        <p>Basheer Pattelthazam giving a talk on topic "Life:Beneficial or Deleterious".</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s6 m4 l3 offset-m2">
-                <div class="card ht hoverable">
-                    <div class="card-image">
-                        <img src="images/portfolio/p6.jpeg">
-                        <span class="card-title">ICC Mess</span>
-                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                class="material-icons">favorite</i></a>
-                    </div>
-                    <div class="card-content">
-                        <p>The non-profit ICC mess provided quality food at low prices for the student body.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s6 m4 l3 ">
-                <div class="card ht hoverable">
-                    <div class="card-image">
-                        <img src="images/portfolio/p1.jpg">
-                        <span class="card-title">Students Meet</span>
-                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                class="material-icons">favorite</i></a>
-                    </div>
-                    <div class="card-content">
-                        <p>Shahid Muslim Farooqi giving a talk on "Turn Before Return".</p>
-                    </div>
-                </div>
-            </div>
-
+      <div class="committee">
+        <div
+          class="committee-header"
+          data-aos="fade-right"
+          data-aos-duration="500"
+        >
+          Our Committee
         </div>
-    </section>
+        <iframe src="./pages/committee.html" frameborder="0"></iframe>
+      </div>
 
-    <!-- ----------------------------PARALLAX---------------------------------------- -->
+      <footer>©2020 Islamic Cultural Centre</footer>
+    </div>
 
-    <section class="fparallax">
-        <div class="parallax-container">
-            <div class="parallax"><img src="images/source/parallax.jpg">
-            </div>
-        </div>
-    </section>
-
-    <!-- ----------------------------ABOUT SECTION---------------------------------------- -->
-
-    <section class="fabout">
-        <div class="section white center">
-            <div class="row container">
-                <h2 class="header">About Us</h2>
-                <p class="grey-text text-darken-3">
-                    ICC has evolved throughout the year from a rented apartment to a bigger three storey building
-                    having various facilities including student mess, library, praying hall and two dormitory
-                    rooms with bathrooms. Annual elections were held to select new committee to lead the community
-                    towards more progressive goals.
-                    <span class="more" style="display: none;">
-                        Hostel facilities were made nearby for fresher students. ICC has become the intersection where
-                        students of different backgrounds interacts irrespective of political affiliations and other
-                        islamic organisations
-                    </span>
-                </p>
-                <a class="btn waves-effect waves-light readMore-btn" onclick="readMore()">Read More</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ----------------------------COMMITTEE---------------------------------------- -->
-
-    <section class="fcommittee scrollspy" id="committee-section">
-        <div class="section white center">
-            <h3 class="header">Our Committee</h3>
-            <div class="carousel portfolio" style="margin-bottom: 30px;">
-
-                <!-- AMEER -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/manshau.jpg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Manshau Rahman
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            Ameer</p>
-                        <a href="https://wa.me/919656060131">
-
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- G.SEC -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/zameel.jpg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Muhammed Zameel
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            General Secretary</p>
-                        <a href="https://wa.me/919747884495">
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- J.SEC -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/ameen.jpg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Muhammed Ameen CK
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            Joint Secretary</p>
-                        <a href="https://wa.me/917593098481">
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- DA'WA SEC -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/hadhi.jpg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Hadi Abdurazak
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            Da'wah Wing</p>
-                        <a href="https://wa.me/918589951908">
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- MESS MD -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/shanif.jpg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Shanif P
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            Mess Director</p>
-                        <a href="https://wa.me/919847756280">
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- MESS MD -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/basim.jpg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Basim M Sharafudheen
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            Mess Director</p>
-                        <a href="https://wa.me/919496902959">
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- MESS MD -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/haseeb.jpg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Abdul Haseeb
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            Mess Director</p>
-                        <a href="https://wa.me/919544243696">
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- IT SEC -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/naseeb.jpg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Naseeb P
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            IT In-Charge</p>
-                        <a href="https://wa.me/918086891172">
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- SQUIF -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/anwer.jpg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Anver Sadique
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            SQUIF Director</p>
-                        <a href="https://wa.me/919633078325">
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- SQUIF -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/fawasMK.jpg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Fawaz MK
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            SQUIF Director</p>
-                        <a href="https://wa.me/919447146442">
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 1st YEAR REP -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/hazeem.jpg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Hazeem
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            1st Year Rep.</p>
-                        <a href="https://wa.me/919567101448">
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 2nd YEAR REP -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/hisham.jpg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Hisham
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            2nd Year Rep.</p>
-                        <a href="https://wa.me/918156901568">
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 3rd YEAR REP -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/salahudheen.jpg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Salahudheen
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            3rd Year Rep.</p>
-                        <a href="https://wa.me/919746302994">
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 4th YEAR REP -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/thanazzal.jpg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Thanazzal
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            4th Year Rep.</p>
-                        <a href="https://wa.me/919961278048">
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- PG REP -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/shanib.jpg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Shanib
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            PG Representative</p>
-                        <a href="https://wa.me/919946118673">
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- TREASURER -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/navas.jpeg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Navas P
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            Treasurer</p>
-                        <a href="https://wa.me/919656060131">
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- LIBRARY -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/munavar.jpg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Munavar TP
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            Library Secretary</p>
-                        <a href="https://wa.me/91702548464">
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- MAINTENANCE -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/samjid.jpg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Samjid Basheer
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            Maintanance Sec.</p>
-                        <a href="https://wa.me/919947571787">
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- MAINTENANCE -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/favasP.jpg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Favas P
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            Maintanance Sec.</p>
-                        <a href="https://wa.me/917025346520">
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- BLOOD SEC -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/shabeel.jpg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Shabeel
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            Blood Secretary</p>
-                        <a href="https://wa.me/918086617927">
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- PROGRAM SEC -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/adilAmeen.jpg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Adhil Ameen
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            Program Secretary</p>
-                        <a href="https://wa.me/919383402858">
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- J.SEC -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/nazim.jpg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Nazim
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            Joint Secretary</p>
-                        <a href="https://wa.me/918156808777">
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- J.SEC -->
-                <div class="card carousel-item">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/committee/ajmalLabeeb.jpg">
-                    </div>
-                    <div class="card-content committee">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Ajmal Labeeb
-                        </span>
-                        <p class="grey-text text-darken-2 center" style="font-size: 17px; display: inline-block;">
-                            Joint Secretary</p>
-                        <a href="https://wa.me/919745923020">
-                            <i class="fab fa-whatsapp zoom "
-                                style=" color: #4FCE5D; font-size: 30px; padding-left: 10px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ----------------------------MODAL NOTIFICATION---------------------------------------- -->
-
-    <section class="infomodal">
-        <div id="modal3" class="modal">
-            <div class="modal-content">
-                <h4 class="info-modal-heading">No Events</h4><br>
-                <p id="info-modal-content">Sorry! There are no events Now! <br>Please, come later</p>
-            </div>
-            <div class="modal-footer">
-                <a href="#" class="modal-close waves-effect btn-flat">Close</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ----------------------------SIDE ICON BAR---------------------------------------- -->
-
-    <!-- <section class="ficonbar">
-        <div class="left-sidebar">
-            <ul class="collections">
-                <li class="collection-item" style="color: white; background: #4e50a8;">
-                    <a href="https://www.facebook.com/groups/122619931145607" class="icon-hover">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li class="collection-item" style="color: white; background: #37a0f0;">
-                    <a href="https://twitter.com/icccetvm" class="icon-hover">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="collection-item" style="color: white; background: #ca1e3d;">
-                    <a href="https://instagram.com/icc.cet?igshid=estzqnmya2hw" class="icon-hover">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section> -->
-
-    <!-- ----------------------------FOOTER---------------------------------------- -->
-
-    <section class="ffooter scrollspy" id="contact-section">
-        <footer class="footer-one">
-            <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <h4 class="white-text">Contact Us</h4>
-                        <p class="grey-text">Opp. Main gate, College of Engineering Trivandram, Sreekariyam Kulathoor
-                            Road,<br> Trivandrum, Kerela 695016</p>
-                        <ul>
-                            <li><a href="mailto:icctvmcet@gmail.com" class="grey-text">
-                                    <i class="material-icons" style="margin-bottom: 10px;">email</i>&nbsp;
-                                    icctvmcet@gmail.com</a></li>
-                        </ul>
-
-                    </div>
-                    <div class="col l6 s12 ">
-                        <h4 class="white-text">Social</h4>
-                        <ul>
-                            <li><a href="https://www.facebook.com/groups/122619931145607" class="grey-text">
-                                    <i class="fab fa-facebook-f"></i> &nbsp;&nbsp; Facebook
-                                </a></li>
-                            <li><a href="https://twitter.com/icccetvm" class="grey-text"><i class="fab fa-twitter"></i>
-                                    &nbsp;Twitter</a></li>
-                            <li><a href="https://instagram.com/icc.cet?igshid=estzqnmya2hw" class="grey-text"><i
-                                        class="fab fa-instagram"></i> &nbsp; Instagram</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-            <div class="row footer-two">
-                <div class="col l6 s6">
-                    <p class="white-text">&copy;2020 Islamic Cultural Centre</p>
-                </div>
-                <div class="col l6 s6">
-                    <p class="white-text right">Designed by ICC</p>
-                </div>
-            </div>
-        </footer>
-    </section>
-
-
-
-</body>
-
-<!-- jQuery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<!-- M Script -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-<!-- custom js -->
-<script src="js/init.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
 </html>

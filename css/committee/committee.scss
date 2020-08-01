@@ -1,0 +1,81 @@
+$carousel-height: 300px;
+$carousel-item-width: 200px;
+$carousel-item-height: 100px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin pixel {
+  @media (min-width: #{$pixel-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100vw;
+  max-width: 100%;
+}
+.carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: $carousel-height;
+  perspective: 500px;
+  transform-style: preserve-3d;
+  transform-origin: 0% 50%;
+
+  .carousel-item {
+    visibility: hidden;
+    width: $carousel-item-width;
+    height: $carousel-item-height;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    & > img {
+      width: 100%;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h2,
+    h3 {
+      font-family: "Ubuntu", sans-serif;
+    }
+
+    h2 {
+      color: rgb(231, 231, 231);
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: 400;
+    }
+    h3 {
+      color: rgb(194, 194, 194);
+      font-size: 1rem;
+    }
+  }
+
+  // Materialbox compatibility
+  &.scrolling .carousel-item .materialboxed,
+  .carousel-item:not(.active) .materialboxed {
+    pointer-events: none;
+  }
+}
