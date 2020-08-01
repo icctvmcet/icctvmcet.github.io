@@ -48,3 +48,7 @@ const redirect1 = (pageName) => {
 AOS.init({
   duration: 1200,
 });
+
+const register = () => {
+  console.log("register");
+};

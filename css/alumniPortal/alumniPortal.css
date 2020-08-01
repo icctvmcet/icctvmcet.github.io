@@ -16,6 +16,7 @@
 body {
   background-color: #000;
   max-width: 100vw;
+  min-height: 100vh;
   overflow-x: visible;
 }
 
@@ -351,12 +352,157 @@ body .home-page header .is-active .line:nth-child(3) {
 }
 
 body .home-page .page-break {
+  display: none;
   margin: 2rem auto;
   width: 85%;
 }
 
 body .home-page .page-break img {
   width: 100%;
+}
+
+body .home-page .alumni-registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: auto;
+  overflow-x: visible;
+  margin-top: 5vh;
+}
+
+body .home-page .alumni-registration .heading {
+  overflow-x: visible;
+  background: url(../../assets/alumni-header.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  position: relative;
+  font-family: "Berkshire Swash", cursive;
+  padding: 10px 30px;
+  z-index: 99;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+  body .home-page .alumni-registration .heading {
+    font-size: 1.8rem;
+    background-size: 300px;
+  }
+}
+
+body .home-page .alumni-registration .heading::before {
+  background: url(../../assets/graduationhat.svg);
+  top: 0;
+  left: -50%;
+}
+
+@media (min-width: 1024px) {
+  body .home-page .alumni-registration .heading::before {
+    background-size: 10%;
+    top: -60%;
+    left: -90%;
+  }
+}
+
+body .home-page .alumni-registration .heading::after {
+  background: url(../../assets/alumni-rect.svg);
+  top: 80%;
+  left: -30%;
+}
+
+@media (min-width: 1024px) {
+  body .home-page .alumni-registration .heading::after {
+    background-size: 40%;
+    top: 85%;
+    left: -60%;
+  }
+}
+
+body .home-page .alumni-registration .heading::before, body .home-page .alumni-registration .heading::after {
+  overflow-x: visible;
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  z-index: -9;
+}
+
+body .home-page .alumni-registration .content {
+  overflow-x: visible;
+  width: 60%;
+  margin: auto;
+  margin-top: 0;
+  color: #fff;
+}
+
+@media (min-width: 1024px) {
+  body .home-page .alumni-registration .content {
+    max-width: 35%;
+    padding-top: 5%;
+  }
+}
+
+body .home-page .alumni-registration .content p {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 1024px) {
+  body .home-page .alumni-registration .content p {
+    font-size: 1.5rem;
+  }
+}
+
+body .home-page .alumni-registration .content .register-button {
+  z-index: 99;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .home-page .alumni-registration .content .register-button .register {
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #3a394b;
+  font-size: 1rem;
+  font-family: "Oleo Script", cursive;
+  background: #f2c380;
+  border-radius: 500px;
+}
+
+body .home-page .alumni-registration .content .register-button .register:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+@media (min-width: 1024px) {
+  body .home-page .alumni-registration .content .register-button .register {
+    font-size: 2rem;
+    margin-top: 12%;
+  }
 }
 
 body .home-page footer {

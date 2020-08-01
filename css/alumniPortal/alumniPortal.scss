@@ -39,6 +39,7 @@ $pixel-width: 340px;
 body {
   background-color: #000;
   max-width: 100vw;
+  min-height: 100vh;
 
   overflow-x: visible;
 
@@ -271,10 +272,129 @@ body {
     }
 
     .page-break {
+      display: none;
       margin: 2rem auto;
       width: 85%;
       img {
         width: 100%;
+      }
+    }
+
+    .alumni-registration {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      margin: auto;
+      //   height: 50vh;
+      overflow-x: visible;
+      margin-top: 5vh;
+
+      .heading {
+        overflow-x: visible;
+        background: url(../../assets/alumni-header.svg);
+
+        background-repeat: no-repeat;
+        background-position-x: center;
+
+        position: relative;
+        font-family: "Berkshire Swash", cursive;
+        padding: 10px 30px;
+        z-index: 99;
+        font-size: 1rem;
+        margin-top: 20px;
+
+        @include desktop {
+          font-size: 1.8rem;
+          background-size: 300px;
+        }
+
+        &::before {
+          background: url(../../assets/graduationhat.svg);
+          top: 0;
+          left: -50%;
+
+          @include desktop {
+            background-size: 10%;
+            top: -60%;
+            left: -90%;
+          }
+        }
+        &::after {
+          background: url(../../assets/alumni-rect.svg);
+          top: 80%;
+          left: -30%;
+
+          @include desktop {
+            background-size: 40%;
+            top: 85%;
+            left: -60%;
+          }
+        }
+
+        &::before,
+        &::after {
+          overflow-x: visible;
+          content: "";
+          position: absolute;
+          background-repeat: no-repeat;
+          height: 100vh;
+          width: 100vw;
+          z-index: -9;
+        }
+      }
+
+      .content {
+        // display: none;
+        overflow-x: visible;
+        width: 60%;
+        margin: auto;
+        margin-top: 0;
+
+        @include desktop {
+          max-width: 35%;
+          padding-top: 5%;
+        }
+        color: #fff;
+        p {
+          color: #fff;
+          text-align: center;
+          font-family: "Roboto", sans-serif;
+          font-size: 0.9rem;
+
+          @include desktop {
+            font-size: 1.5rem;
+          }
+        }
+
+        .register-button {
+          z-index: 99;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .register {
+            cursor: pointer;
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: rgb(58, 57, 75);
+
+            font-size: 1rem;
+            font-family: "Oleo Script", cursive;
+            background: #f2c380;
+            border-radius: 500px;
+
+            &:active {
+              transform: scale(0.9);
+            }
+            @include desktop {
+              font-size: 2rem;
+              margin-top: 12%;
+            }
+          }
+        }
       }
     }
 
