@@ -398,6 +398,86 @@ body {
       }
     }
 
+    .book-drive {
+      width: 90%;
+      margin: auto;
+      margin-bottom: 8%;
+      margin-top: 2rem;
+      .heading {
+        color: #000000;
+        position: relative;
+
+        background: url("../../assets/book-collection-header.svg");
+        background-size: 250px;
+        font-family: "Berkshire Swash", cursive;
+        font-size: 1.2rem;
+        padding: 20px 20px;
+        margin-bottom: -10%;
+        z-index: 99;
+        background-repeat: no-repeat;
+      }
+      .content {
+        background: #ffffff;
+        border: 5px solid #fbc37e;
+        border-radius: 26px;
+        position: relative;
+
+        p {
+          padding: 60px 30px;
+
+          @include desktop {
+            font-size: 1.5rem;
+          }
+        }
+
+        &::after {
+          content: "";
+          background: url("../../assets/book.svg");
+          background-size: 300px;
+          position: absolute;
+          top: 20%;
+          left: 25%;
+          background-repeat: no-repeat;
+          height: 400px;
+          width: 400px;
+
+          @include desktop {
+            top: 10%;
+          }
+        }
+
+        .button {
+          z-index: 99;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .donate-book {
+            margin-bottom: -8%;
+            cursor: pointer;
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: rgb(58, 57, 75);
+
+            font-size: 1rem;
+            font-family: "Oleo Script", cursive;
+            background: #f2c380;
+            border-radius: 30px;
+
+            &:active {
+              transform: scale(0.9);
+            }
+            @include desktop {
+              font-size: 2rem;
+              margin-top: 18%;
+            }
+          }
+        }
+      }
+    }
+
     footer {
       background: #33473f;
       color: #fff;
@@ -410,5 +490,5 @@ body {
 }
 
 .blur {
-  filter: blur(1px);
+  filter: blur(8px);
 }

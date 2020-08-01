@@ -505,6 +505,100 @@ body .home-page .alumni-registration .content .register-button .register:active 
   }
 }
 
+body .home-page .book-drive {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 8%;
+  margin-top: 2rem;
+}
+
+body .home-page .book-drive .heading {
+  color: #000000;
+  position: relative;
+  background: url("../../assets/book-collection-header.svg");
+  background-size: 250px;
+  font-family: "Berkshire Swash", cursive;
+  font-size: 1.2rem;
+  padding: 20px 20px;
+  margin-bottom: -10%;
+  z-index: 99;
+  background-repeat: no-repeat;
+}
+
+body .home-page .book-drive .content {
+  background: #ffffff;
+  border: 5px solid #fbc37e;
+  border-radius: 26px;
+  position: relative;
+}
+
+body .home-page .book-drive .content p {
+  padding: 60px 30px;
+}
+
+@media (min-width: 1024px) {
+  body .home-page .book-drive .content p {
+    font-size: 1.5rem;
+  }
+}
+
+body .home-page .book-drive .content::after {
+  content: "";
+  background: url("../../assets/book.svg");
+  background-size: 300px;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 400px;
+}
+
+@media (min-width: 1024px) {
+  body .home-page .book-drive .content::after {
+    top: 10%;
+  }
+}
+
+body .home-page .book-drive .content .button {
+  z-index: 99;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .home-page .book-drive .content .button .donate-book {
+  margin-bottom: -8%;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #3a394b;
+  font-size: 1rem;
+  font-family: "Oleo Script", cursive;
+  background: #f2c380;
+  border-radius: 30px;
+}
+
+body .home-page .book-drive .content .button .donate-book:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+@media (min-width: 1024px) {
+  body .home-page .book-drive .content .button .donate-book {
+    font-size: 2rem;
+    margin-top: 18%;
+  }
+}
+
 body .home-page footer {
   background: #33473f;
   color: #fff;
@@ -515,7 +609,7 @@ body .home-page footer {
 }
 
 .blur {
-  -webkit-filter: blur(1px);
-          filter: blur(1px);
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
 }
 /*# sourceMappingURL=alumniPortal.css.map */

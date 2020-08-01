@@ -1,11 +1,13 @@
 const hamburger = () => {
   var element = document.getElementById("hamburger");
   var navList = document.querySelector("#mobile-nav");
-  var ayat = document.querySelector(".ayat-section");
+  var registration = document.querySelector(".alumni-registration");
+  var content = document.querySelector(".content");
 
   navList.classList.toggle("nav-animate");
   element.classList.toggle("is-active");
-  ayat.classList.toggle("blur");
+  registration.classList.toggle("blur");
+  content.classList.toggle("blur");
 };
 const hamburger1 = () => {
   var element = document.getElementById("hamburger");
