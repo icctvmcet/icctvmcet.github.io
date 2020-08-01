@@ -9,9 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Oleo+Script&family=Lateef&family=Ubuntu&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/homePageStyle/homePageStyle.css" />
+    <link rel="stylesheet" href="../css/alumniPortal/alumniPortal.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
+
   <body>
     <div class="loader-wrapper">
       <svg
@@ -80,100 +81,39 @@
 
     <div class="home-page">
       <header>
-        <img class="background" src="./assets/background-imge.jpg" alt="" />
-
         <div class="logo-section">Islamic Cultural Centre</div>
 
-        <div class="hamburger" id="hamburger" onclick="hamburger()">
+        <div class="hamburger" id="hamburger" onclick="hamburger1()">
           <span class="line"></span>
           <span class="line"></span>
           <span class="line"></span>
         </div>
         <nav class="mobile-nav">
           <ul id="mobile-nav">
-            <li onclick="redirect('home')">Home</li>
-            <li onclick="redirect('alumni-portal')">Alumni Portal</li>
-            <li onclick="redirect('events')">Events</li>
-            <li onclick="redirect('committee')">Committee</li>
-            <li onclick="redirect('about-us')">About Us</li>
+            <li onclick="redirect1('home')">Home</li>
+            <li onclick="redirect1('Book-collection')">Book-collection</li>
+            <li onclick="redirect1('Alumni-scolarship')">Alumni-scolarship</li>
+            <li onclick="redirect1('about-us')">About Us</li>
           </ul>
         </nav>
         <nav class="desktop-nav">
           <ul>
-            <li onclick="redirect('home')">HOME</li>
-            <li onclick="redirect('alumni-portal')">ALUMNI PORTAL</li>
-            <li onclick="redirect('events')">EVENTS</li>
-            <li onclick="redirect('committee')">COMMITTEE</li>
-            <li onclick="redirect('about-us')">ABOUT US</li>
+            <li onclick="redirect1('home')">HOME</li>
+            <li onclick="redirect1('Book-collection')">BOOK COLLECTION</li>
+            <li onclick="redirect1('Alumni-scolarship')">ALUMNI-SCOLARSHIP</li>
+            <li onclick="redirect1('about-us')">ABOUT US</li>
           </ul>
         </nav>
       </header>
 
-      <div class="ayat-section" data-aos="fade-down">
-        <p class="ayat">طَلَبُ الْعِلْمِ فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ</p>
-        <p class="ayat-meaning">
-          Seeking Knowledge is an obligation <br />
-          upon every Muslim
-        </p>
-      </div>
-
-      <div class="home-about" data-aos="zoom-in" data-aos-duration="1000">
-        <div class="home-about-content">
-          <p>
-            The Islamic Cultural Centre (ICC) was founded in 1989 by a group of
-            well guided muslims of College of Engineering, Trivandrum. It has
-            now evolved into an organisation which caters the needs of muslims
-            in the college. ICC had its humble beginnings in a rented apartment
-            and now it has flourished into a well structured organisation
-            occupying a three storey building.
-          </p>
-        </div>
-      </div>
-
       <div class="page-break">
-        <img src="./assets/page-break.svg" alt="" />
-      </div>
-
-      <div class="event-section" id="events">
-        <div class="event-header" data-aos="fade-right" data-aos-duration="500">
-          Coming Events
-        </div>
-        <div class="coming-events" data-aos="flip-left">
-          <img src="./assets/eid-gathering.svg" alt="" />
-        </div>
-
-        <div class="event-header" data-aos="fade-right" data-aos-duration="500">
-          Past Events
-        </div>
-        <div class="past-events">
-          <img src="./assets/past-events/p1.jpg" data-aos="fade-right" alt="" />
-          <img src="./assets/past-events/p2.jpg" data-aos="fade-left" alt="" />
-          <img src="./assets/past-events/p3.jpg" data-aos="fade-right" alt="" />
-          <img src="./assets/past-events/p4.jpg" data-aos="fade-right" alt="" />
-          <img src="./assets/past-events/p5.jpg" data-aos="fade-right" alt="" />
-          <img src="./assets/past-events/p6.jpg" data-aos="fade-right" alt="" />
-        </div>
-      </div>
-
-      <div class="page-break">
-        <img src="./assets/page-break.svg" alt="" />
-      </div>
-
-      <div class="committee" id="committee">
-        <div
-          class="committee-header"
-          data-aos="fade-right"
-          data-aos-duration="500"
-        >
-          Our Committee
-        </div>
-        <iframe src="./pages/committee.html" frameborder="0"></iframe>
+        <img src="../assets/page-break.svg" alt="" />
       </div>
 
       <footer>©2020 Islamic Cultural Centre</footer>
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>

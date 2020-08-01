@@ -7,6 +7,13 @@ const hamburger = () => {
   element.classList.toggle("is-active");
   ayat.classList.toggle("blur");
 };
+const hamburger1 = () => {
+  var element = document.getElementById("hamburger");
+  var navList = document.querySelector("#mobile-nav");
+
+  navList.classList.toggle("nav-animate");
+  element.classList.toggle("is-active");
+};
 
 document.querySelector(".home-page").style.display = "none";
 document.querySelector(".home-page").classList.add("js-loading");
@@ -20,6 +27,21 @@ window.addEventListener("load", function () {
 });
 
 const redirect = (pageName) => {
+  if (pageName === "alumni-portal") {
+    window.location = "./pages/alumni-portal.html";
+  } else if (pageName === "home") {
+    window.location = "./index.html";
+  } else {
+    window.location.hash = pageName;
+  }
+  console.log(pageName);
+};
+const redirect1 = (pageName) => {
+  if (pageName === "home") {
+    window.location = "../index.html";
+  } else {
+    window.location.hash = pageName;
+  }
   console.log(pageName);
 };
 

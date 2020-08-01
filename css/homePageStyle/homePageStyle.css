@@ -592,7 +592,33 @@ body .home-page .event-section .coming-events {
 }
 
 body .home-page .event-section .coming-events img {
-  width: 30vw;
+  width: 90vw;
+  margin-left: 10px;
+}
+
+@media (min-width: 1024px) {
+  body .home-page .event-section .coming-events img {
+    max-width: 50%;
+    margin-left: 20%;
+  }
+}
+
+body .home-page .event-section .past-events {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .home-page .event-section .past-events img {
+  margin: 30px 0;
+  max-width: 500px;
+  border-radius: 10px;
 }
 
 body .home-page .committee {
