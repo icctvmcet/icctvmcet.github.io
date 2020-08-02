@@ -375,8 +375,84 @@ body {
       }
     }
 
-    .book-drive {
-      display: none;
+    .other-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 100px;
+
+      .book-drive {
+        width: 90%;
+        @include desktop {
+          max-width: 30%;
+        }
+
+        .heading {
+          color: black;
+
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          position: relative;
+          overflow-x: visible;
+          p {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-family: "Berkshire Swash", cursive;
+            font-size: 1rem;
+            background-color: #fff;
+            border: 5px solid #fbc37e;
+            padding-right: 2rem;
+            padding: 10px 20px;
+            border-radius: 10px;
+
+            @include desktop {
+              font-size: 1.6rem;
+            }
+          }
+        }
+        .content {
+          overflow-x: visible;
+          background-color: #fff;
+          border-radius: 10px;
+          border: 5px solid #fbc37e;
+          padding: 15px;
+          padding-top: 70px;
+          text-align: center;
+          font-family: "Roboto", sans-serif;
+
+          font-size: 0.9rem;
+
+          @include desktop {
+            font-size: 1.3rem;
+          }
+
+          .button {
+            font-family: "Oleo Script", cursive;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 20px;
+            a {
+              text-decoration: none;
+
+              cursor: pointer;
+              background: #f2c380;
+              color: #333;
+              font-size: 1.1rem;
+              padding: 8px 20px;
+              border-radius: 50px;
+
+              @include desktop {
+                font-size: 1.6rem;
+              }
+            }
+          }
+        }
+      }
     }
 
     footer {
